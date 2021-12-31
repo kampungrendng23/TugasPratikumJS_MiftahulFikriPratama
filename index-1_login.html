@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in.html</title>
+
+     <style>
+        .block { 
+            border: 1px solid rgb(70, 194, 21);
+            border-radius: 10px;
+            width: 50%;
+            height: 30%;
+            margin: 20%;
+        }
+        .name {
+            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-left: 35px;
+        }
+        .pass {
+            margin-bottom: 50px;
+            margin-left: 35px;
+        }
+        .button {
+            margin-left: 60px;
+            margin-bottom: 40px;
+        }
+    </style>
+    
+    <script>
+        function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if (username == "ahmad2017" && password == "integrity"){
+            alert("Log In Success");
+            window.location.href = "file:///G:/MATKUL/javasc5soal/index-1_login2.html"
+
+        }
+        else {
+            alert("Log In Failed, Please Try Again");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="block">
+        <div class="name">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" id="username">
+        </div>
+        <div class="pass">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+        </div>
+        <div class="button">
+        <button onclick="login()">Log In</button>
+        </div>
+    </div>
+</body>
+</html>

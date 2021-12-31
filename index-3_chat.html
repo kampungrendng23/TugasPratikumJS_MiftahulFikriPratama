@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apk Chat</title>
+</head>
+<body>
+    <input type="text" id="chat">
+    <button onclick="Submit()">Submit</button>
+    <h2 id="room"></h2>
+
+    <script>
+        let chat = document.getElementById("chat")
+        let hasil = document.getElementById("room")
+        let penampung = ""
+
+        function Submit() {
+            penampung += chat.value + "<br>"
+            hasil.innerHTML = penampung
+            chat.value = ""
+        }
+    </script>
+</body>
+</html>
